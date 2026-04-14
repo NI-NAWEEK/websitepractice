@@ -313,6 +313,14 @@
       text-underline-offset: 3px;
     }
 
+    .accordion-header {
+    display: flex;                /* Activates Flexbox */
+    align-items: center;          /* Centers items vertically */
+    justify-content: space-between; /* Positions arrow and text on opposite sides */
+    flex-direction: row;          /* Ensures horizontal alignment */
+}
+
+
     /* ── CONTACT ── */
     #contact {
       background: var(--black);
@@ -453,7 +461,9 @@
     <div class="faq-list">
 
       <div class="faq-item">
+        <div class="accordian-header">
          <details name="faq"><summary><p class="faq-q">Why Instagram and Amazon?</p></summary>
+        </div>
         <div class="faq-a">
           <p>We chose Instagram and Amazon for a few reasons:</p>
           <ul>
